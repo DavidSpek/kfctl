@@ -7,7 +7,7 @@
 # its own go module so we don't have to pull in so many dependencies just to build
 # our kustomize functions.
 
-FROM golang:1.13-stretch
+FROM golang:1.16.3-stretch
 ENV CGO_ENABLED=0
 WORKDIR /go/src/
 COPY go.mod .
