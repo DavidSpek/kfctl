@@ -60,7 +60,7 @@ RUN make build-kfctl && \
 # Final image base
 #
 
-FROM alpine:3.10.1 as barebones_base
+FROM alpine:3.14.0 as barebones_base
 RUN mkdir -p /opt/kubeflow
 WORKDIR /opt/kubeflow
 
